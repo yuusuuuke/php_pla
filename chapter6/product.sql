@@ -1,12 +1,17 @@
 drop database if exists shop;
+-- drop => データベース削除
+-- exist shop => shopデータベースがあれば
 create database shop default character set utf8 collate utf8_general_ci;
 drop user if exists 'staff'@'localhost';
 create user 'staff'@'localhost' identified by 'password';
 grant all on shop.* to 'staff'@'localhost';
 use shop;
+-- use => データベースに接続するコマンド
 
 create table product (
-	id int auto_increment primary key, 
+-- create table => テーブル作成コマンド
+	id int auto_increment primary key,
+	-- auto_increment => 番号自動加算 
 	name varchar(200) not null, 
 	price int not null
 );
