@@ -3,7 +3,7 @@ userに固有のデータを格納するための仕組み
 -->
 <?php session_start(); ?>
 <?php require '../header.php'; ?>
-<?php require '../chapter7/menu.php'; ?>
+<?php require './menu.php'; ?>
 <?php 
   unset($_SESSION['customer']);
   $pdo=new PDO('mysql:host=localhost;dbname=shop;charset=utf8',

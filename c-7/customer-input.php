@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php require '../header.php'; ?>
-<?php require '../chapter7/menu.php'; ?>
+<?php require './menu.php'; ?>
 <?php
 $name=$address=$login=$password='';
 if (isset($_SESSION['customer'])) {

@@ -1,5 +1,5 @@
 <?php '../header.php' ?>
-<?php '../chapter7/menu.php' ?>
+<?php './menu.php' ?>
 
 <form action="product.php" method="post">
   商品検索

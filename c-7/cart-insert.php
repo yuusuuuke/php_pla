@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php require '../header.php' ?>
-<?php require '../chapter7/menu.php' ?>
+<?php require './menu.php' ?>
 <?php
   $id=$_REQUEST['id'];
   if (isset($_SESSION['product'])) {

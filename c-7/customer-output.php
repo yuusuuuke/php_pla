@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php require '../header.php'; ?>
-<?php require '../chapter7/menu.php'; ?>
+<?php require './menu.php'; ?>
 <?php
 $pdo=new PDO('mysql:host=localhost;dbname=shop;charset=utf8', 
 	'staff', 'password');
